@@ -14,7 +14,12 @@
 # limitations under the License.
 
 # Inherit from those products. Most specific first.
-$(call inherit-product, device/motorola/potter/full_potter.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_n_mr1.mk)
+
+# Inherit from potter device
+$(call inherit-product, device/motorola/potter/device.mk)
 
 # Inherit some common LegionOS stuff.
 $(call inherit-product, vendor/legion/config/common_full_phone.mk)
@@ -37,3 +42,5 @@ PRODUCT_BRAND := motorola
 PRODUCT_MANUFACTURER := Motorola
 PRODUCT_RELEASE_NAME := potter
 
+# for specific
+$(call inherit-product, vendor/motorola/potter/potter-vendor.mk)
