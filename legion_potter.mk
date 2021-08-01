@@ -1,6 +1,5 @@
 #
-# Copyright (C) 2016 The CyanogenMod Project
-# Copyright (C) 2017 The LineageOS Project
+# Copyright (C) 2021 The LegionOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -17,18 +16,15 @@
 # Inherit from those products. Most specific first.
 $(call inherit-product, device/motorola/potter/full_potter.mk)
 
-# Inherit some common DU stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+# Inherit some common LegionOS stuff.
+$(call inherit-product, vendor/legion/config/common_full_phone.mk)
 
-# PixelGApps
-$(call inherit-product-if-exists, vendor/pixelgapps/pixel-gapps.mk)
-
-#PE Props
+#LegionOS Props
 TARGET_GAPPS_ARCH := arm64
 TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_SUPPORTS_GOOGLE_RECORDER := false
-TARGET_INCLUDE_STOCK_ARCORE := false
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
 TARGET_INCLUDE_LIVE_WALLPAPERS := false
+
 # TWRP theme
 TW_THEME := portrait_hdpi
 
@@ -36,7 +32,7 @@ PRODUCT_SYSTEM_PROPERTY_BLACKLIST := ro.product.model
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := potter
-PRODUCT_NAME := aosp_potter
+PRODUCT_NAME := legion_potter
 PRODUCT_BRAND := motorola
 PRODUCT_MANUFACTURER := Motorola
 PRODUCT_RELEASE_NAME := potter
