@@ -30,6 +30,10 @@ TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_SUPPORTS_GOOGLE_RECORDER := true
 TARGET_INCLUDE_LIVE_WALLPAPERS := false
 
+# LegionOS Device Maintainers
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.maintainer.name=MdRiyan
+
 # TWRP theme
 TW_THEME := portrait_hdpi
 
