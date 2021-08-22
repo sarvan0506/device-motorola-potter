@@ -28,7 +28,8 @@ $(call inherit-product, vendor/legion/config/common_full_phone.mk)
 TARGET_GAPPS_ARCH := arm64
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_SUPPORTS_GOOGLE_RECORDER := true
-TARGET_INCLUDE_LIVE_WALLPAPERS := false
+TARGET_INCLUDE_LIVE_WALLPAPERS := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
 
 # LegionOS Device Maintainers
 PRODUCT_PROPERTY_OVERRIDES += \
