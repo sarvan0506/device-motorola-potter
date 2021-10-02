@@ -388,3 +388,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 persist.service.lgospd.enable=0 \
 persist.service.pcsync.enable=0
 
+# PPUI Props
+PRODUCT_PROPERTY_OVERRIDES += \
+ro.ppui.device_name=potter \
+ro.ppui.version=3.9 \
+ro.ppui.version_code=Eternal \
+ro.ppui.maintainer_name=mdriyan

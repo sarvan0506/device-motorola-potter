@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2021 The LegionOS Project
+# Copyright (C) 2021 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -21,19 +21,18 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_n_mr1.mk
 # Inherit from potter device
 $(call inherit-product, device/motorola/potter/device.mk)
 
-# Inherit some common LegionOS stuff.
-$(call inherit-product, vendor/legion/config/common_full_phone.mk)
+# Inherit some common aosp stuff.
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
-#LegionOS Props
+# PixelGApps
+$(call inherit-product-if-exists, vendor/pixelgapps/pixel-gapps.mk)
+
+#PPUI Props
 TARGET_GAPPS_ARCH := arm64
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_SUPPORTS_GOOGLE_RECORDER := true
 TARGET_INCLUDE_LIVE_WALLPAPERS := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
-
-# LegionOS Device Maintainers
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.maintainer.name=MdRiyan
 
 # TWRP theme
 TW_THEME := portrait_hdpi
@@ -42,7 +41,7 @@ PRODUCT_SYSTEM_PROPERTY_BLACKLIST := ro.product.model
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := potter
-PRODUCT_NAME := legion_potter
+PRODUCT_NAME := aosp_potter
 PRODUCT_BRAND := motorola
 PRODUCT_MANUFACTURER := Motorola
 PRODUCT_RELEASE_NAME := potter
