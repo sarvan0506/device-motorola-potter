@@ -24,6 +24,7 @@ TARGET_SPECIFIC_HEADER_PATH := $(DEVICE_PATH)/include
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += \
    $(DEVICE_PATH)/overlay \
+   $(DEVICE_PATH)/overlay-aosp
 
 BOARD_VENDOR := motorola-qcom
 
