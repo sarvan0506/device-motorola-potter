@@ -391,6 +391,6 @@ persist.service.pcsync.enable=0
 # PPUI Props
 PRODUCT_PROPERTY_OVERRIDES += \
 ro.ppui.device_name=potter \
-ro.ppui.version=3.10 \
-ro.ppui.version_code=Azrael \
+ro.ppui.version=3.11 \
+ro.ppui.version_code=ignite \
 ro.ppui.maintainer_name=MdRiyan
