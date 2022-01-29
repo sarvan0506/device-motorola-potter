@@ -28,7 +28,6 @@ VNDK_SP_LIBRARIES := \
     libjsoncpp \
     liblzma \
     libprocessgroup \
-    libunwind \
     libunwindstack \
     libutils \
     libutilscallstack \
