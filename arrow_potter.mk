@@ -21,8 +21,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_n_mr1.mk
 # Inherit from potter device
 $(call inherit-product, device/motorola/potter/device.mk)
 
-# Inherit some common aosp stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+# Inherit some common arrow stuff.
+$(call inherit-product, vendor/arrow/config/common.mk)
 
 # PixelGApps
 $(call inherit-product-if-exists, vendor/pixelgapps/pixel-gapps.mk)
@@ -30,8 +30,8 @@ $(call inherit-product-if-exists, vendor/pixelgapps/pixel-gapps.mk)
 #PPUI Props
 TARGET_GAPPS_ARCH := arm64
 TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_SUPPORTS_GOOGLE_RECORDER := true
-TARGET_INCLUDE_LIVE_WALLPAPERS := true
+#TARGET_SUPPORTS_GOOGLE_RECORDER := true
+#TARGET_INCLUDE_LIVE_WALLPAPERS := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
 CUSTOM_BUILD_TYPE := OFFICIAL
 # TWRP theme
@@ -41,7 +41,7 @@ PRODUCT_SYSTEM_PROPERTY_BLACKLIST := ro.product.model
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := potter
-PRODUCT_NAME := aosp_potter
+PRODUCT_NAME := arrow_potter
 PRODUCT_BRAND := motorola
 PRODUCT_MANUFACTURER := Motorola
 PRODUCT_RELEASE_NAME := potter
