@@ -27,13 +27,13 @@ $(call inherit-product, vendor/arrow/config/common.mk)
 # PixelGApps
 $(call inherit-product-if-exists, vendor/pixelgapps/pixel-gapps.mk)
 
-#PPUI Props
+# ArrowOS Props
 TARGET_GAPPS_ARCH := arm64
 TARGET_BOOT_ANIMATION_RES := 1080
 #TARGET_SUPPORTS_GOOGLE_RECORDER := true
 #TARGET_INCLUDE_LIVE_WALLPAPERS := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
-CUSTOM_BUILD_TYPE := OFFICIAL
+DEVICE_MAINTAINER := mdriyan65
 # TWRP theme
 TW_THEME := portrait_hdpi
 
