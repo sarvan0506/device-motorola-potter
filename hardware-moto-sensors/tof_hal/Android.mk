@@ -40,7 +40,7 @@ LOCAL_C_INCLUDES += \
     system/libbase/include \
     $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr/include
 
-LOCAL_C_INCLUDES += external/zlib-ng
+LOCAL_C_INCLUDES += external/zlib
 
 LOCAL_ADDITIONAL_DEPENDENCIES += $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr
 
