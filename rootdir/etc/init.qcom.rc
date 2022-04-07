@@ -197,6 +197,16 @@ on boot
 
     setprop net.tcp.2g_init_rwnd 10
 
+# Set vendor-ril lib path based on Meta version
+on property:vendor.rild.libpath=*
+    setprop rild.libpath ${vendor.rild.libpath}
+
+on property:ro.vendor.radio.noril=*
+    setprop ro.radio.noril ${ro.vendor.radio.noril}
+    
+on property:dev.bootcomplete=1
+    restart ril-daemon
+
 #   Assign TCP buffer thresholds to be ceiling value of technology maximums
 #   Increased technology maximums should be reflected here.
     write /proc/sys/net/core/rmem_max  16777216
