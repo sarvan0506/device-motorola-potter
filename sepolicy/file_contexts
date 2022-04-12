@@ -9,6 +9,7 @@
 
 # Binaries
 /(vendor|system/vendor)/bin/adspd                                        u:object_r:adspd_exec:s0
+/(vendor|system/vendor)/bin/init\.baseband\.sh                           u:object_r:init_baseband_exec:s0
 /(vendor|system/vendor)/bin/init\.mmi\.boot\.sh                          u:object_r:mmi_boot_exec:s0
 /(vendor|system/vendor)/bin/init\.mmi\.laser\.sh                         u:object_r:mmi_laser_exec:s0
 /(vendor|system/vendor)/bin/wlan_carrier_bin\.sh                         u:object_r:init_wifi_exec:s0
