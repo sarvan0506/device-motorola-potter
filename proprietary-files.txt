@@ -1166,6 +1166,7 @@ vendor/lib64/libOpenCL.so
 vendor/lib64/libQSEEComAPI.so
 vendor/lib64/libQtiTether.so
 vendor/lib64/libRSDriver_adreno.so
+vendor/lib64/libspl.so
 vendor/lib64/libSecureUILib.so
 vendor/lib64/libStDrvInt.so
 vendor/lib64/libSubSystemShutdown.so
